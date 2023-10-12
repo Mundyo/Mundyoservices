@@ -19,6 +19,7 @@
     "method-override": "^3.0.0",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.1",
+    "morgan": "^1.10.0",
     "puppeteer": "^21.3.6",
     "slugify": "^1.6.5"
   },
