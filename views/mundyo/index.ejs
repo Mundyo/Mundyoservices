@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" type="text/css" href="/style.css">
+
+    
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>MundyoMasterServices</title>
+</head>
+<body>
+
+    <style>
+    
+
+    body{
+    background-color: black; 
+
+   .navbar a.nav-link,
+.navbar button.navbar-toggler {
+background-color: transparent;
+border: none;
+color: aliceblue;
+}
+
+
+.navbar button.navbar-toggler span.navbar-toggler-icon {
+background-color: aliceblue;
+}
+}
+
+.fixed-navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: rgb(120, 103, 42);
+   z-index: 1000;
+} 
+.text {
+   color: rgb(120, 103, 42);
+   font-size: 60px;
+   font-weight: bold;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   background-color: transparent; 
+   padding: 100px; 
+}
+
+
+.custom-form {
+   background-color: rgb(120, 103, 42);
+   border-radius: 10px;
+   padding: 20px;
+   width:25em ;
+}
+.custom-btn {
+   background-color: rgba(133, 4, 4, 0.669);
+   color: white;
+}
+
+.navbar-nav .nav-item .dropdown-menu .dropdown-item {
+padding: 0.25rem 1rem; 
+margin: 0.1rem 0;
+margin-bottom: 0.5rem;
+}
+@media (max-width: 980px) {
+.header-text {
+font-size: 5vh; 
+}
+.card-img-top{
+  width: 80% !important;
+}
+.card-text {
+  font-size: 10px !important;
+}
+.custom-form {
+      display: none;
+    }
+.firsttext p{
+  font-size: 40px !important;
+}
+a[href="/new"] .btn.custom-btn {
+    width: 20px !important;
+    height: 30px !important;
+    display: none !important;
+  }
+}
+@media (max-width: 390px) {
+.header-text {
+font-size: 5vh; 
+}
+}
+    </style>
+    <%- include('nav') %>
+ 
+ 
+   
+<div class="container-fluid " style="background: url('Drain-snake.jpg'); background-size: 100% 100%; background-color: aliceblue; min-height: 80vh;">
+  <div class="text">
+        <div class="row" style="height: 300px;" style="background: url('Drain-snake.jpg'); background-size: cover;">
+
+            <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext" style="color:rgb(120, 103, 42) ; height: 80px; font-size: 10vh; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                    <p>TOP QUALITY SERVICES </p>
+            </div>
+            <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext"  style="color:rgb(120, 103, 42) ; height: 80px; font-size: 10vh; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <p>CALL US AT: 978-596-5883</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+   
+    <div class="container  text-left">
+        <div class="row pb-4 pt-5">
+            <div class="col-md-6">
+                <div class="card" style="width: 35rem; height:15rem; background: transparent; ">
+                    <img src="van4.jpg" class="card-img-top" alt="..." style="filter: brightness(40%); border-radius: 80px;">
+                    <div class="card-body ">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text text-left" style="color:white; font-size: 20px;">
+                        MUNDYO MASTERCRAFT SERVICES is a top-notch provider of comprehensive maintenance 
+              solutions for homeowners. With a wide range of services that include HVAC troubleshooting, 
+              floor installation, HVAC tune-up, home repairs (including plumbing, wall repair, and electrical 
+              troubleshooting), light installation, carbon monoxide and smoke detector installation, 
+              and house inspection. <br>MUNDYO MASTERCRAFT SERVICES is committed to providing high-quality services 
+              to ensure the safety, comfort, and convenience of its clients. The company's team of skilled professionals 
+              has extensive experience in the field and is equipped with the latest tools and technologies to provide
+               efficient and effective services that meet the unique needs of each customer. Whether it's routine maintenance, 
+               repairs, or installation of new systems. <br>MUNDYO MASTERCRAFT SERVICES delivers reliable and professional
+                solutions that exceed expectations.
+
+                      </p>
+                      
+                    </div>
+                  </div>
+            </div>
+
+
+            <div class="col-md-6"style="border-radius: 2px; ">
+                   
+
+
+
+
+
+              <div class="container mt-5 ">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form class="custom-form" method="POST" action="/new">
+                            <div class="mb-3">
+
+                                <P style="color:aliceblue; font-weight: bolder;">
+                                    SCHEDULE SERVICE TODAY!
+                                </P>
+                                
+                                <div class="mb-3">
+    
+                                    <select class="form-select" id="autoSizingSelect" name="title">
+                                        <option selected> What type of service</option>
+                                        <option value="HVAC">HVAC</option>
+                                        <option value="PLUMBING">PLUMBING</option>
+                                        <option value="ELECTRICAL">ELECTRICAL</option>
+                                        <option value="GENERAL MAINTENANCE">General Maintenance</option>
+                                      </select>
+
+                                <label for="firstName" class="form-label">Name</label>
+                                <input required name="name" type="text" class="form-control" id="name" placeholder="Enter your full name">
+                            </div>
+                           
+                            <div class="mb-3">
+                                <label for="phoneNumber" class="form-label">Phone Number</label>
+                                <input  required name ="phone"  type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input required name="email" type="email" class="form-control" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Address</label>
+                                <input  required name="address" type="address" class="form-control" id="address" placeholder="Enter your address">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="description" id="description" rows="4" placeholder="Enter your message"></textarea>
+                            </div>
+                            <button type="submit" class="btn custom-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+              
+
+
+
+
+
+
+
+               <div class="text-below pb-4 pt-5" style="font-size: 5vh; color:aliceblue; font-family: Verdana, Geneva, Tahoma, sans-serif; word-spacing: 20%;">
+                <p>
+                
+               
+                  <br>
+                  <br>
+                  <a href="/new">
+                    <button class="button" style="background-color: rgba(128, 255, 0, 0.644); border-radius: 20px; font-family:cursive; font-weight: bold; width: 105%;"> ✓ SCHEDULE SERVICE TODAY!</button>
+                
+                  </a>
+                 
+                
+               </p>
+               </div>
+          
+
+               
+            </div>
+           
+
+
+
+            </div>
+        </div>
+        <div class="row pt-5 pb-4" >
+
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+             
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button> 
+            
+            </div>
+
+            <div class="carousel-inner"  >
+              <div class="carousel-item active">
+                  <div class="d-flex" style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                    <img src="tub b4.jpg" class="d-block w-50" alt="..." >
+                    <img src="tub after.jpg" class="d-block w-50" alt="...">
+                  </div>
+               
+                <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5 >SHOWER REGLAZING</h5>
+                  <p >YOU DON'T NEED TO THROW AWAY YOUR BATHROOM,  YOU JUST NEED TO CALL THE RIGHT PEOPLE</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex"  style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                  <img src="tub glazer.jpg" class="d-block w-50" alt="...">
+                  <img src="working on the roof.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5>WIDE RANGE OF SERVICES</h5>
+                  <p>WE ARE YOUR SOLUTION !</p>
+                </div>
+              </div>
+              
+              <div class="carousel-item">
+                <div class="d-flex"  style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                  <img src="floor b4 2.jpg" class="d-block w-50" alt="...">
+                  <img src="floor after.PNG" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5>FLOOR INSTALLATION</h5>
+                  <p> TOP-NOTCH PROVIDER OF COMPREHENSIVE MAINTENANCE</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex"  style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                  <img src="workring on the tiles.jpg" class="d-block w-50" alt="...">
+                  <img src="Drain-snake.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5>DID WE MENTION PLUMBING ?  </h5>
+                  <p>WE'VE GOT YOU COVERED</p>
+                </div>
+              </div>
+ 
+            <div class="carousel-item">
+                <div class="d-flex"  style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                  <img src="IMG_9828.jpg" class="d-block w-50" alt="...">
+                  <img src="working on the ceiling.jpg" class="d-block w-50" alt="...">
+                </div>
+              <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5>WE LOVE OUR WORK, WE LOVE YOUR HOME</h5>
+                  <p> SKILLED PROFESSIONALS WITH EXTENSIVE EXPERIENCE IN THE FIELD </p>
+              </div>
+            </div>
+
+
+              <div class="carousel-item">
+                <div class="d-flex"  style="height:fit-content;  max-height: 100%;width:auto; height: auto; object-fit: contain;">
+                  <img src="van4.jpg" class="d-block w-50" alt="...">
+                  <img src="me.jpg" class="d-block w-50" alt="...">
+                </div>
+                <div class="carousel-caption d-none d-md-block" style="color:rgb(225, 191, 67); font-weight: bolder; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">
+                  <h5>RELIABLE SOLUTION. NOW YOU CAN SMILE  </h5>
+                  <p>WELL EQUIPPED WITH THE LATEST TOOLS AND TECHNOLOGY TO PROVIDE YOU
+                    EFFICIENT AND EFFECTIVE SERVICES.</p>
+                </div>
+              </div>
+
+         
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          
+
+
+
+
+        </div>
+       
+    
+    
+
+
+
+
+<%- include('us.ejs') %>
+<%- include('review') %>
+
+<%- include('footer')  %>
+<script>
+  function scrollToTable() {
+    const tableElement = document.getElementById('sportTable');
+    tableElement.scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+    
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+hxJgTV6I9p5l5ZO1uIf5Hs5STfEzkDHC1e3R4xq5cuP5RvB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>
+  
+
+
+
+
+  

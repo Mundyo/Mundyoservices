@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+    
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Edit</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mb-4">Edit Article</h1>
+
+    <%= article.id %>
+
+    <form action="/articles/<%= article.id %>" method="POST">
+      <%- include('_form_fields') %>
+    </form>
+  </div>
+
+
+
+
+  <script>
+
+//  document.addEventListener('DOMContentLoaded', function(){
+//   ScrollToView();
+
+//   const AirElement = document.getElementById('Air');
+
+//   function ScrollToView(){
+
+//     if (AirElement){
+//       AirElement.scrollIntoView();
+//     }
+//   }
+//  })
+
+
+
+//   </script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+hxJgTV6I9p5l5ZO1uIf5Hs5STfEzkDHC1e3R4xq5cuP5RvB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+   
+</body>
+</html>

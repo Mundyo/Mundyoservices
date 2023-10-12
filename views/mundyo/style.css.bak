@@ -1,0 +1,388 @@
+body{
+    color: #fff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    Text-align: center;
+    margin: 0;
+    padding:0;
+    
+}
+#content{
+   display:grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-auto-rows: minmax(100px,auto);
+   max-width:960px;
+   grid-gap: 10px;
+   margin:0 auto; 
+   grid-template-areas: 
+   "nav nav nav nav "
+   "nav nav nav nav "
+   "picture picture picture picture"
+   "picture picture picture picture"
+   "main main main main"
+   "main main main main"
+   "quote quote quote quote"
+   "hobbies hobbies hobbies hobbies"
+   "section section section section"
+   "last last last last"
+   ;
+   
+
+}
+@media screen and (min-width:760px) {
+   #content{
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-auto-rows: minmax(100px,auto);
+      max-width:960px;
+      grid-gap: 10px;
+      margin:0 auto ;
+    
+      grid-template-areas: 
+      "nav nav nav nav "
+      "picture picture main main "
+      "picture picture main main"
+      "picture picture main main"
+      "quote quote quote quote"
+      "quote quote quote quote"
+      "hobbies hobbies hobbies hobbies"
+      "section section section section"
+      "section section section section"
+      "last last last last"
+     
+      ;
+      
+   
+   }
+}
+   
+
+
+
+
+
+ #content >*{
+     background: #3bbced;
+     padding: 5px;
+     
+}   
+
+main{
+    
+grid-area: main;
+}
+
+picture{
+  grid-area: picture;
+  
+}
+  hobbies{
+  grid-area:hobbies;
+  display: flex;
+  justify-content: center;
+} 
+
+hobbies p{
+  border:solid 2px;
+  margin: 0 10px;
+  height: 80%;
+  width: 15%;
+}
+
+hobbies p img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+last{
+  grid-area:last;
+}
+  
+
+quote{
+   grid-area:quote;
+   display: flex;
+   justify-content: center;
+   
+}
+quote .card{
+  margin: 0 10px;
+  border: solid 2px;
+  width: 20%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.card {
+  /* background-color: #ffffff; */
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.card button {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.read-More{
+  display: none;
+}
+section{
+   grid-area: section;
+   /* display: flex;
+   /* position:relative; */
+			/* flex-wrap: wrap;
+			justify-content: space-between;
+			margin: 0 auto;
+			padding: 10px;
+			max-width: 1200px;  */
+} 
+
+
+nav{
+    grid-area: nav;
+    background:#0082e6 ;
+    height:80px;
+    width:100%;
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+} 
+label.logo{
+   color:#fff;
+   font-size:35px;
+   line-height:80px;
+   padding:0 100px;
+   font-weight: bold;
+}
+nav ul{
+   float: right;
+   margin-right: 20px;
+
+}
+nav ul li{
+   display: inline-block;
+   line-height: 80px;
+   margin:0 5px;
+}
+nav ul li a{
+   color:#fff;
+   font-size: 17px;
+   text-transform: uppercase;
+   border-radius:3px ;
+   padding: 7px 13px;
+   
+}
+a.active, a:hover{
+   background:#1b9bff;
+   transition: .5;
+  
+}
+.checkbtn{
+   font-size: 30px;
+   color: white;
+   float: right;
+   line-height: 80px;
+   margin-right: 40px;
+   cursor: pointer;
+   display: none;
+ }
+ #check{
+   display: none;
+ }
+ @media (max-width: 952px){
+   label.logo{
+     font-size: 30px;
+     padding-left: 50px;
+   }
+   nav ul li a{
+     font-size: 16px;
+   }
+ }
+ @media (max-width: 858px){
+   .checkbtn{
+     display: block;
+   }
+   ul{
+     position: fixed;
+     width: 100%;
+     height: 100vh;
+     background: #2c3e50;
+     top: 80px;
+     left: -100%;
+     text-align: center;
+     transition: all .5s;
+   }
+   nav ul li{
+     display: block;
+     margin: 50px 0;
+     line-height: 30px;
+   }
+   nav ul li a{
+     font-size: 20px;
+   }
+   a:hover,a.active{
+     background: none;
+     color: #0082e6;
+   }
+   #check:checked ~ ul{
+     left: 0;
+   }
+ }
+
+ picture img{
+   max-height: 100%;
+   max-width: 100%;
+   
+}
+main p{
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1.2em; /* or any other size you prefer */
+}
+
+
+
+nav{
+   grid-area: nav;
+   background:#0082e6 ;
+   height:80px;
+   width:100%;
+ 
+} 
+label.logo{
+  color:#fff;
+  font-size:35px;
+  line-height:80px;
+  padding:0 100px;
+  font-weight: bold;
+}
+navy ul{
+  float: right;
+  margin-right: 20px;
+
+}
+navy ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin:0 5px;
+}
+navy ul li a{
+  color:#fff;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius:3px ;
+  padding: 7px 13px;
+  
+}
+a.active, a:hover{
+  background:#1b9bff;
+  transition: .5;
+ 
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  navy ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  navy ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  navy ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+.form-group {
+  margin: 10px 0;
+  color: #2c3e50;
+}
+
+label {
+  display:flex;
+}
+
+input[type="text"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+
+}
+
+.btn {
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: green;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  background-color: red;
+  color: #fff;
+  border: none;
+  text-decoration: none;
+}
+.new h1{
+  color: #0082e6;
+  font-size: 50px;
+}

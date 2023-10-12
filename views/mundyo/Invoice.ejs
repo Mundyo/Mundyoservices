@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/public/style.css"> -->
+
+
+    
+    
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>MundyoMasterServices</title>
+</head>
+<body>
+
+    <style>
+      
+      .card-img-top {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+  }
+
+ 
+  @media (max-width: 950px) {
+    .card-img-top {
+      width: 100%; 
+      max-height: 40vh;
+    }
+
+    
+  }
+  @media (max-width: 600px) {
+    .card-img-top {
+      width: 200px; 
+      max-height: 100%;
+    }
+  }
+ 
+  
+
+  
+    </style>
+
+
+
+
+
+
+
+
+
+
+  <script
+  
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK"
+  crossorigin="anonymous"
+></script>
+
+
+  <nav class="navbar navbar-expand-lg fixed-navbar navbar-light" style="background-color: rgb(120, 103, 42);">
+        
+      
+    <div class="container-fluid" style="font-weight: bolder;">
+      <a class="navbar-brand" href="#"> 
+        <img src="/logo2m.PNG" alt="Logo" class="logo-img" style="height:10vh; width:6vw;" >
+       
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" id="navbarToggleExternalContent"> 
+       
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav" style="padding: 0.25rem 1rem;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">HOME</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              SERVICES
+            </a>
+            <ul class="dropdown-menu" style="background-color:rgb(120, 103, 42); padding: 0.25rem 1rem;  margin: 0.1rem 0; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-weight: bold;">
+              <li><a class="dropdown-item mb-2" href="/AirConditioning">Air Conditioning</a></li>
+              <li><a class="dropdown-item mb-2" href="/Plumbing">Plumbing</a></li>
+              <li><a class="dropdown-item mb-2" href="/Electrical">Electrical</a></li>
+              <li><a class="dropdown-item mb-2" href="/Heating">Heating</a></li>
+              <li><a class="dropdown-item" href="/Generalmaintenance">General Maintenance</a></li>
+
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/new">CONTACT US</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/About">ABOUT US</a>
+          </li>
+
+          
+
+         
+
+           </ul>
+
+      </div>
+    </div>
+  
+  </nav>
+
+
+<div class="container-fluid pt-5 pb-5" style="background-color: black;">
+
+       <div class="col-md-2"></div>
+
+
+<div class="col-md-8 mx-auto pb-5 pt-5 " id="invoice" style="border: 1px solid black; padding: 10px; background-color: white;">
+    <div class="row">
+
+
+        <div class="col-md-6 col-sm-6">
+               
+                    <div class="card" style="width: 18rem; border: none; font-family: 'Times New Roman', Times, serif;">
+                        <img src="/logo.PNG" class="card-img-top" alt="..." style=" filter: brightness(40%); border-radius: 4px; background-color: rgb(255, 218, 85);">
+                        <!-- height:15rem; width:20rem; -->
+                        <div class="card-body">
+                          <h5 class="card-title">LIONEL MUNDYO </h5>
+                          <p class="card-text"> (978) 596-5883 | <br> MundyoServices@gmail.com</p>
+                         
+                        </div>
+                    </div>
+                
+        </div>
+
+
+     
+     
+        <div class="col-md-3 col-sm-3 offset-3">
+                    <div class="row">
+                        <div class="row" style="font-family: 'Times New Roman', Times, serif;">
+                            <div class="col1">Troubleshooting</div>
+                            <div class="col3">HVAC tune-up </div>
+                            <div class="col2">Floor Installation</div>
+
+                            <div class="col4">Home repairs</div>
+                            <div class="col5">Duct cleaning</div>
+                            <div class="col6">Maintenance</div>
+                        </div>
+                     </div>
+        </div>
+
+
+        <div class="col-md-6  col-sm-6" style="color:rgb(191, 157, 34)" style="font-weight: bold; font-family: 'Times New Roman', Times, serif;">
+           <p style=" font-family: 'Times New Roman', Times, serif;">
+           <b>INVOICE TO:</b>  <%=invoice.name %> <br>
+           <b>ADDRESS: </b> <%=invoice.address %> |<br> <b> CONTACT NO: </b> <%=invoice.phone %> <br>
+           <b>EMAIL:</b>  <%=invoice.email %>
+           </p> 
+        </div>
+        <div class="col-md-4 offset-2 col-sm-4 offset-2 "  style="color:rgb(191, 157, 34);" style="font-family: 'Times New Roman', Times, serif;">
+            <div class="row" > <b>DATE:</b> <%=invoice.createdAt.toLocaleDateString() %></div>
+            <div class="row" > <b>INVOICE ID #:</b>  <%=invoice.id %></div>
+           
+         
+        </div>
+
+        <div class="col-md-2 offset-1  col-sm-2 offset-1 text-center" style="background-color: rgb(59, 59, 180) !important; border-radius: 5px;" >SERVICE</div>
+        <div class="col-md-3 offset-1  col-sm-3 offset-1 text-center" style="background-color: rgb(152, 25, 25) !important; border-radius: 5px;">DESCRIPTION</div>
+        <div class="col-md-2 offset-1  col-sm-2 offset-1 text-center" style="background-color: rgb(59, 59, 180) !important; border-radius: 5px;">TOTAL</div>
+
+
+         <div class="row">
+          <div class="title col-md-3 pt-3 offset-1 col-sm-3 pt-3 offset-1" style="font-weight: bolder;"> <p><%=invoice.title %></p></div>
+          <div class="service1 col-md-4 pt-3 col-sm-4 pt-3" style="font-family: 'Times New Roman', Times, serif;">
+           
+          </div>
+          <div class="service2 col-md-4 pt-3 col-sm-4 pt-3 " style="font-family: 'Times New Roman', Times, serif; font-weight: bold;" > 
+            <p>
+              
+            </p>
+          </div>
+         </div>
+       
+        <div class="row">
+          <div class="col-md-3 offset-1 col-sm-3 offset-1"style="font-weight: bold;"> Larger services</div> 
+        <div class="service3 col-md-4 col-sm-4"style="font-family: 'Times New Roman', Times, serif;"></div>
+
+        <div class="service4 col-md-4 col-sm-4 pb-5" style="font-family: 'Times New Roman', Times, serif; font-weight: bold;"> 
+        <p>
+
+        </p>
+        </div>
+        </div>
+        
+
+        <div class="div">
+           <div class="col-md-1 col-sm-1"></div>
+           <div class="col-md-10 col-sm-10 offset-1">
+            <hr>
+           </div>
+           <div class="col-md-1 col-sm-1"></div>
+        </div>
+       
+
+        <div class="col-md-6 col-sm-6  pr-2 pl-2 text-center" >CLIENT REQUEST DETAILS:</div>
+        <div class="col-md-5 col-ms-5 offset-1"  style="font-family: 'Times New Roman', Times, serif;"><%=invoice.description %></div>
+
+
+        <div class="div">
+          <div class="col-md-1 col-sm-1"></div>
+          <div class="col-md-10col-sm-10 offset-1">
+           <hr>
+          </div>
+          <div class="col-md-1 col-sm-1"></div>
+       </div>
+
+        <div class="col-md-12 col-sm-12pt-5 pb-4">
+          <div class="row">
+            <div class="col-md-12 col-sm-12">
+              Sub Total: 
+            </div>
+            </div>
+
+          <div class="row"  style="font-family: 'Times New Roman', Times, serif;">
+               <div class="col-md-12 col-sm-12">
+                Discount:
+               </div>
+          </div>
+          <div class="row"  style="font-family: 'Times New Roman', Times, serif;">
+             <div class="col-md-12 col-sm-12">
+              Grand Total:
+             </div>
+          </div>
+        </div>
+
+         <div class="container pt-5 pb-4"  style="font-family: 'Times New Roman', Times, serif;">
+            <div class="row">
+              <div class="col-md-6 col-sm-6"> <img src="/sign.jpg" style="height:5rem; width:5rem;"></div>
+              <div class="col-md-6 col-sm-6" style="font-family: 'Times New Roman', Times, serif;"> Any  parts needed is not included in the price!!!</div>
+            </div>
+          
+         </div>
+     
+    </div>
+    <!-- <button id="downloadPdfButton">Download as PDF</button> -->
+
+</div>
+
+
+
+       <div class="col-md-2 col-sm-12">.</div>
+       
+
+</div>
+
+
+
+
+
+    
+
+
+   
+   <%- include('footer') %>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const invoiceTitle = '<%= invoice.title %>';
+
+    if (invoiceTitle === 'PLUMBING') {
+
+
+      const paragraph = document.createElement('p');
+        paragraph.textContent = 'Plumbing repairs like unclogging toilet, garbage disposal repair, leaky faucet and drain cleaning... ';
+
+      const price = document.createElement('p');
+        price.textContent='$190-$251';
+
+      const paragraph2 = document.createElement('p');
+         paragraph2.textContent = 'Any larger jobs such as Boiler repair/installation, large pipe repair, pump replacement...'  ;
+
+      const price2= document.createElement('p');
+        price2.textContent='$500-$1700';
+         
+
+      const plumbingDescription = document.querySelector('.service1'); 
+          plumbingDescription.appendChild(paragraph);
+      const  plumbingPrice = document.querySelector('.service2');
+       plumbingPrice.appendChild(price);
+
+     
+       const plumbingDescription2 = document.querySelector('.service3');
+          plumbingDescription2.appendChild(paragraph2);
+       const plumbingPrice2 = document.querySelector('.service4');
+          plumbingPrice2.appendChild(price2)
+
+    };
+
+
+    if (invoiceTitle === 'ELECTRICAL') {
+
+
+const paragraph = document.createElement('p');
+  paragraph.textContent = 'Electrical repairs such as outlet, light, outlet installation... ';
+
+const price1 = document.createElement('p');
+  price1.textContent='$155-$210';
+
+const paragraph2 = document.createElement('p');
+   paragraph2.textContent = 'Any larger jobs such as junction box, breaker extension 240v, HotTub wiring... '  ;
+
+const price2= document.createElement('p');
+  price2.textContent='$600-$1255';
+   
+
+const electricalDescription = document.querySelector('.service1'); 
+    electricalDescription.appendChild(paragraph);
+const  electricalPrice = document.querySelector('.service2');
+ electricalPrice.appendChild(price1);
+
+
+ const electricalDescription2 = document.querySelector('.service3');
+    electricalDescription2.appendChild(paragraph2);
+ const electricalPrice2 = document.querySelector('.service4');
+    electricalPrice2.appendChild(price2)
+
+}
+
+if (invoiceTitle === 'HVAC') {
+
+
+const paragraph = document.createElement('p');
+  paragraph.textContent = 'Hvac repairs such as furnace (no air conditioning), mini-split, heater issue, condenser unit troubleshooting, heat-pump, Ac unit ... ';
+
+const price1 = document.createElement('p');
+  price1.textContent='$170-$290';
+
+const paragraph2 = document.createElement('p');
+   paragraph2.textContent = 'Any larger jobs such as Ac installation, condenser unit replacement, baseboard heater installation... '  ;
+
+const price2= document.createElement('p');
+  price2.textContent='$800-$4250';
+   
+
+const electricalDescription = document.querySelector('.service1'); 
+    electricalDescription.appendChild(paragraph);
+const  electricalPrice = document.querySelector('.service2');
+ electricalPrice.appendChild(price1);
+
+
+ const electricalDescription2 = document.querySelector('.service3');
+    electricalDescription2.appendChild(paragraph2);
+ const electricalPrice2 = document.querySelector('.service4');
+    electricalPrice2.appendChild(price2)
+
+}
+
+if (invoiceTitle === 'GENERAL MAINTENANCE') {
+
+
+const paragraph = document.createElement('p');
+  paragraph.textContent = 'TV wall mounting, mirror hanging, door installation, wall painting, foldable wall mounted work desk, etc..';
+
+const price1 = document.createElement('p');
+  price1.textContent='$90-$315';
+
+const paragraph2 = document.createElement('p');
+   paragraph2.textContent = 'Any larger jobs such as floor installation, carpet installation, counter top installation, etc..'  ;
+
+const price2= document.createElement('p');
+  price2.textContent='$800-$1800';
+   
+
+const electricalDescription = document.querySelector('.service1'); 
+    electricalDescription.appendChild(paragraph);
+const  electricalPrice = document.querySelector('.service2');
+ electricalPrice.appendChild(price1);
+
+
+ const electricalDescription2 = document.querySelector('.service3');
+    electricalDescription2.appendChild(paragraph2);
+ const electricalPrice2 = document.querySelector('.service4');
+    electricalPrice2.appendChild(price2)
+
+}
+
+    
+  });
+</script>
+
+
+
+
+
+
+  <script>
+    document.getElementById('downloadPdfButton').addEventListener('click', function () {
+     console.log('Button click');
+
+      const content = document.getElementById('invoice');
+      
+      const options = {
+        margin: 10,
+        filename: 'my-document.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+      };
+       
+     console.log(content);
+      console.log('Converting to PDF...');
+  
+      html2pdf().from(content).set(options).outputPdf(function (pdf) {
+       
+        try {
+
+          console.log('PDF generated successfully');
+          console.error('Error generating PDF:', error);
+
+          const blob = new Blob([pdf], { type: 'application/pdf' });
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement('a');
+          a.href = url;
+          a.download = 'my-service-invoice.pdf'; 
+          a.style.display = 'none';
+          document.body.appendChild(a);
+          a.click();
+          window.URL.revokeObjectURL(url);
+        } catch (error) {
+          console.error('Error generating PDF:', error);
+        }
+      });
+    });
+  </script>
+  
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+hxJgTV6I9p5l5ZO1uIf5Hs5STfEzkDHC1e3R4xq5cuP5RvB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+        
+    </body>
+    </html    
+
+    
+    
+        
+
+          

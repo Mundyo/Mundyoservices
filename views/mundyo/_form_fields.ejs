@@ -1,0 +1,88 @@
+<div class="container mt-5 pb-5 pt-5" style="background-color: black; color:aliceblue; border: 5px;">
+  <div class="row pb-5" style="background-color: rgb(120, 103, 42); width: 87vw;">
+
+
+      <div class="col-md-12" >
+          <form class="custom-form justify-content-center" style="width: 84vw" method="POST" action="/new">
+
+            <div class="col-md-10 col-sm-10">
+
+              <div class="container pb-5 justify-content-center " >
+
+
+                 <div class="row justify-content-center " >
+                  <div class="col-md-1 col-sm-1 "></div>
+                  <div class="col-md-7 offset-5 col-sm-7"><img src="logo2m.PNG" alt="Logo" class="logo-img"  style="height:25vh; width:18vw; background-color:rgb(120, 103, 42);" ></div>
+               
+                  
+                 </div>
+               
+              </div>
+              
+              <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+              <select class="form-select" id="autoSizingSelect" name="title">
+                <option selected> What type of service</option>
+                <option value="HVAC">HVAC</option>
+                <option value="PLUMBING">PLUMBING</option>
+                <option value="ELECTRICAL">ELECTRICAL</option>
+                <option value="GENERAL MAINTENANCE">General Maintenance</option>
+              </select>
+              <div class="mb-3">
+
+                
+              </div>
+                  <label for="firstName" class="form-label" style="border-radius: 0; "></label>
+                  <input required name="name" type="text" class="form-control input-field" id="name" placeholder="Enter your full name">
+              </div>
+             
+              <div class="mb-3">
+                <label for="address" class="form-label"></label>
+                <input required name="address" type="text" class="form-control input-fiel" id="address" placeholder="Enter your address" style="width: 83.5% !important;">
+              </div>
+
+              <div class="mb-3">
+                  <label for="phoneNumber" class="form-label"></label>
+                  <input required name="phone" type="tel" class="form-control input-field" id="phone" placeholder="Enter your phone number">
+              </div>
+              <div class="mb-3">
+                  <label for="email" class="form-label"></label>
+                  <input required name="email" type="email" class="form-control input-field" id="email" placeholder="Enter your email">
+              </div>
+              
+              </div>
+              <div class="mb-3">
+                  <label for="message" class="form-label"></label>
+                  <textarea name="description" class="form-control input-field" id="description" rows="4" placeholder="Enter your request" <%= article.description%>
+                    ></textarea>
+              </div>
+             
+              
+
+              <div class="row text-center pb-3 ">
+                  <div class="col-md-3 col-sm-2"></div>
+                  <div class="col-md-6 col-sm-8">
+                    <button type="submit" class="btn btn-success w-100 w-100 mx-auto " style="background-color: green;">Submit</button>
+                  </div>
+                  <div class="col-md-3 col-sm-2"></div>
+              </div>
+
+              <div class="row text-center">
+
+                <div class="col-md-3 col-sm-2"></div>
+                <div class="col-md-6 col-sm-8">
+                  <a href="/" class="btn btn-secondary w-100">Cancel</a>
+                </div>
+                <div class="col-md-3 col-sm-2"></div>
+  
+
+              </div>
+             
+                
+             
+              
+          </form>
+      </div>
+  </div>
+</div>
+
+
