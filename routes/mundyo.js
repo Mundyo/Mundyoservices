@@ -98,7 +98,7 @@ router.post('/new', async (req, res, next) => {
     await invoice.save();
     console.log(req.body);
     
-    res.redirect(`/invoice/${invoice._id}`);
+    res.redirect(`/Invoice/${invoice._id}`);
   } catch (error) {
     
     next(error);
