@@ -6,6 +6,7 @@ const MundyoRouter= require('./routes/mundyo');
 const puppeteer = require('puppeteer');
 const path = require('path');
 const morgan = require('morgan');
+const bodyParser = require("body-parser");
 
 const MongoDB ='mongodb+srv://deoleyo:Kasongi2014@cluster0.cb3lhdo.mongodb.net/';
 console.log(MongoDB);
@@ -26,8 +27,10 @@ connnectDB();
 
 
 app.set("view engine", "ejs");
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
+app.use(bodyParser.urlencoded({ extended:true}));
+app.use(morgan("tiny"));
 // app.use('/static', express.static(path.join(__dirname,'public')));
 
 

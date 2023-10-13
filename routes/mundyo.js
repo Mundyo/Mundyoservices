@@ -36,7 +36,7 @@ router.get('/AirConditioning',  async(req, res) => {
 
 router.get('/new', async (req, res) =>{
    
-  res.render('mundyo/new' ,{articles : new Invoice()});
+  res.render('mundyo/new' ,{articles : new Invoice() });
 });
 
 router.get('/Generalmaintenance',  async(req, res) => {
@@ -53,7 +53,7 @@ router.get('/Plumbing',  async(req, res) => {
 })
 router.get('/invoice', async(req, res) =>{
 
-  res.render('mundyo/Invoice', {article: new Invoice()})
+  res.render('mundyo/Invoice', {article: new Invoice() })
 })
  
 
@@ -68,7 +68,7 @@ router.get('/invoice/:id', async (req, res) => {
     const invoice = await Invoice.findById(req.params.id);
 
 
-    res.render('mundyo/invoice', { invoice});
+    res.render('mundyo/invoice', { invoice} );
   } catch (error) {
    
     console.error(error);
