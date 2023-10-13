@@ -7,6 +7,7 @@ const puppeteer = require('puppeteer');
 const path = require('path');
 const morgan = require('morgan');
 const bodyParser = require("body-parser");
+const cors = require("cors");
 
 const MongoDB ='mongodb+srv://deoleyo:Kasongi2014@cluster0.cb3lhdo.mongodb.net/';
 console.log(MongoDB);
@@ -31,6 +32,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended:true}));
 app.use(morgan("tiny"));
+app.use(cors());
 // app.use('/static', express.static(path.join(__dirname,'public')));
 
 
@@ -44,7 +46,7 @@ const articles =  await Article.find().sort({
 
 app.get('/new',  async(req, res) => {
   
-  res.render('mundyo/New', { article: new Article() })
+  res.render('mundyo/new', { article: new Article() })
 })
 
 
