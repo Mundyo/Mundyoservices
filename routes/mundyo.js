@@ -66,7 +66,7 @@ router.get('/invoice/:id', async (req, res) => {
   try {
    
     const invoice = await Invoice.findById(req.params.id);
-
+    console.warn(invoice);
 
     res.render('mundyo/invoice', { invoice} );
   } catch (error) {
@@ -97,6 +97,7 @@ router.post('/new', async (req, res, next) => {
 
     await invoice.save();
     console.log(req.body);
+    console.warn(invoice);
     
     res.redirect(`/Invoice/${invoice._id}`);
   } catch (error) {
