@@ -68,7 +68,7 @@ router.get('/invoice/:id', async (req, res) => {
     const invoice = await Invoice.findById(req.params.id);
     console.warn(invoice);
 
-    res.render('mundyo/invoice', { invoice} );
+    res.render('mundyo/Invoice', { invoice} );
   } catch (error) {
    
     console.error(error);
