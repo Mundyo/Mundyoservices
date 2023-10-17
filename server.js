@@ -15,6 +15,7 @@ console.log(MongoDB);
 mongoose.set('strictQuery', true);
 
 
+
 const connnectDB = async () => {
     await mongoose.connect(MongoDB, {
         useUnifiedTopology: true,
@@ -34,7 +35,7 @@ app.use(bodyParser.urlencoded({ extended:true}));
 app.use(morgan("tiny"));
 app.use(cors());
 app.use(express.json());
-// app.use('/static', express.static(path.join(__dirname,'public')));
+
 
 
 
