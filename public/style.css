@@ -1,8 +1,8 @@
 
 
-/* body{
+body{
   background-color: black;
-} */
+}
 
 .form-group {
   margin: 10px 0;
@@ -44,7 +44,7 @@ textarea {
   color: #fff;
   border: none;
   text-decoration: none;
-} */
+} 
 .new h1{
   background-color: #e60036;
   font-size: 50px;
@@ -102,6 +102,8 @@ padding: 0.25rem 1rem;
 margin: 0.1rem 0;
 margin-bottom: 0.5rem;
 }
+
+
 @media (max-width: 768px) {
 .header-text {
 font-size: 10px !important; 
