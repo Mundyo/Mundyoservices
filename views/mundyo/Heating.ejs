@@ -17,105 +17,28 @@
 </head>
 <body>
 
-    <style>
-        body{
-             background-color: black; 
-        
-            .navbar a.nav-link,
-    .navbar button.navbar-toggler {
-        background-color: transparent;
-        border: none;
-        color: aliceblue;
-    }
-
-
-    .navbar button.navbar-toggler span.navbar-toggler-icon {
-        background-color: aliceblue;
-    }
-        }
-
-        .fixed-navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background-color: rgb(120, 103, 42);
-            z-index: 1000;
-        } 
-        .text {
-            color: rgb(120, 103, 42);
-            font-size: 60px;
-            font-weight: bold;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            background-color: transparent; 
-            padding: 100px; 
-        }
-
-
-.custom-form {
-            background-color: rgb(120, 103, 42);
-            border-radius: 10px;
-            padding: 20px;
-            width:25em ;
-        }
-        .custom-btn {
-            background-color: rgba(133, 4, 4, 0.669);
-            color: white;
-        }
-
-        .navbar-nav .nav-item .dropdown-menu .dropdown-item {
-    padding: 0.25rem 1rem; 
-    margin: 0.1rem 0;
-    margin-bottom: 0.5rem;
-}
-@media (max-width: 768px) {
-  .header-text {
-    font-size: 5vh; 
-  }
-  .firsttext {
-    font-size: 25px !important;
-  }
-}
-  @media (max-width: 390px) {
-  .header-text {
-    font-size: 5vh; 
-  }
-}
-  @media(max-width:780px){
- .navbar-brand img{
-  width: 60px !important;
- } 
- #name.form-control {
-    width: 97% !important;
-  }
-}
-
-
-    </style>
     <%- include('nav') %>
  
- 
-   
-<div class="container-fluid "  style="background: url('Drain-snake.jpg'); background-size: 100% 100%; background-color: aliceblue; min-height: 80vh;">
-  <div class="text">
-        <div class="row" style="height: 300px;" style="background: url('Drain-snake.jpg'); background-size: cover;">
+    <div class="container-fluid " >
+      <div class="text pb-5">
+            <div class="row" >
 
-            <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext" style="color:rgb(120, 103, 42) ; height: 80px; font-size: 10vh; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                    TOP QUALITY SERVICES 
-            </div>
-            <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext"  style="color:rgb(120, 103, 42) ; height: 80px; font-size: 10vh; font-weight: bold; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                CALL US AT: 978-596-5883
-            </div>
+        <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext">
+                <p>TOP QUALITY SERVICES </p>
         </div>
-  </div>
+        <div class="firsttext col-md-12 col-sm-12 text-center" id="firsttext"  >
+            <p>CALL US AT: (978)-596-5883</p>
+        </div>
+    </div>
+</div>
 </div>
 
    
     <div class="container  text-left" id="Air">
         <div class="row pb-4 pt-5">
             <div class="col-md-6">
-                <div class="card" style="width: 35rem; background: transparent; ">
-                    <img src="heatingIssues.jpg" class="card-img-top" alt="..." style="filter: brightness(40%); border-radius: 80px;  height:25rem !important;">
+                <div class="card" >
+                    <img src="heatingIssues.jpg" class="card-img-top" alt="..." style="filter: brightness(40%); border-radius: 80px; ">
                     <div class="card-body ">
                       <h5 class="card-title"></h5>
                       <p class="card-text text-left" style="color:white; font-size: 20px;">
@@ -140,17 +63,14 @@
                    
 
 
-
-
-
-              <div class="container mt-5 ">
+              <div class="container mt-5 hidden-form">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <form class="custom-form" method="post" action="/new">
                             <div class="mb-3">
 
-                                <P style="color:aliceblue; font-weight: bolder;">
-                                    SCHEDULE SERVICE TODAY!
+                                <P style="color:aliceblue; font-weight: bolder; margin-left: 6rem;">
+                                  <br>  SCHEDULE SERVICE TODAY!
                                 </P>
                                 
                                 <div class="mb-3">
@@ -179,11 +99,11 @@
                                 <label for="address" class="form-label">Address</label>
                                 <input  required name="address" type="address" class="form-control" id="address" placeholder="Enter your address">
                             </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea name="description" id="description" rows="4" placeholder="Enter your message"></textarea>
+                            <div class="mb-3 message">
+                                <!-- <label for="message" class="form-label">Message</label> -->
+                                <textarea name="description" id="description" rows="2" placeholder="Enter your message" style="width:20rem;"></textarea>
                             </div>
-                            <button type="submit" class="btn custom-btn">Submit</button>
+                            <button type="submit" class="btn btn-primary ">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -192,7 +112,6 @@
 
 
 
-              
 
 
 
@@ -204,7 +123,7 @@
                   <br>
                   <br>
                   <a href="/new">
-                    <button class="button" style="background-color: rgba(128, 255, 0, 0.644); border-radius: 20px; font-family:cursive; font-weight: bold; width: 105%;"> ✓ SCHEDULE SERVICE TODAY!</button>
+                    <button class="button" style="background-color: rgba(128, 255, 0, 0.644); border-radius: 20px; font-family:cursive; font-weight: bold; width: 70%; margin-left: 10rem;"> ✓ SCHEDULE SERVICE TODAY!</button>
                 
                   </a>
                  
@@ -323,11 +242,6 @@
 
         </div>
        
-    
-    
-
-
-
 
 <%- include('us.ejs') %>
 <%- include('review') %>

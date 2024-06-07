@@ -20,29 +20,116 @@
     body{
       background-color: black;
     }
-    .input-field {
-    width: 100% !important; 
-  }
-  @media (max-width:780px){
-    .logo-img{
-    width:170px !important;
-  }
-  #name.form-control {
-    width: 83% !important;
-  }
-  }
+   
+ 
  
   </style>
 
   <%- include('nav') %>
-  <div class="container justify-content-center ">
+  <div class="containers justify-content-center ">
 
-    <div class="new" style="color:aliceblue;">
-      <h1 >Request Form</h1>
+    <div class="new pt-3">
+    
+      <div class="d-flex justify-content-center align-items-center">
+        <h1>Request Form</h1>
+      </div>
   
-        <div class="col-md-10" style="width:max-content;">
+        <div class="col-md-12">
           <form action="/new" method="post">
-            <%- include('_form_fields') %>
+         
+
+            <div class="containernew mt-5 pb-5 pt-5" style="background-color: black; color:aliceblue; border: 5px;">
+              <div class="row pb-5" >
+            
+            
+                  <div class="col-md-12" >
+                      <form class="custom-form justify-content-center" style="width: 100vw" method="post" action="/new">
+            
+                        <div class="col-md-10 col-sm-10">
+            
+                          <div class="container pb-5 justify-content-center " >
+            
+            
+                             <div class="row  formnew " >
+                              <div class="d-flex justify-content-center align-items-center">
+                                <img src="logo2m.PNG" alt="Logo" class="logo-img"  >
+                              </div>
+                              </div>
+                             
+                           
+                              
+                            
+                           
+                          </div>
+                          
+                          <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                          <select class="form-select new" id="autoSizingSelect" name="title">
+                            <option selected> What type of service</option>
+                            <option value="HVAC">HVAC</option>
+                            <option value="PLUMBING">PLUMBING</option>
+                            <option value="ELECTRICAL">ELECTRICAL</option>
+                            <option value="GENERAL MAINTENANCE">General Maintenance</option>
+                          </select>
+                          <div class="mb-3">
+            
+                            
+                          </div>
+                              <label for="firstName" class="form-label" style="border-radius: 0; "></label>
+                              <input required name="name" type="text" class="form-control new input-field" id="name" placeholder="Enter your full name">
+                          </div>
+                         
+                          <div class="mb-3">
+                            <label for="address" class="form-label"></label>
+                            <input required name="address" type="text" class="form-control new input-fiel" id="address" placeholder="Enter your address">
+                          </div>
+            
+                          <div class="mb-3">
+                              <label for="phoneNumber" class="form-label"></label>
+                              <input required name="phone" type="tel" class="form-control new input-field" id="phone" placeholder="Enter your phone number">
+                          </div>
+                          <div class="mb-3">
+                              <label for="email" class="form-label"></label>
+                              <input required name="email" type="email" class="form-control new input-field" id="email" placeholder="Enter your email">
+                          </div>
+                          
+                          </div>
+                          <div class="mb-3">
+                              <label for="message" class="form-label"></label>
+                              <textarea name="description" class="form-control new input-field" id="description" rows="4" placeholder="Enter your request" <%= article.description%>
+                                ></textarea>
+                          </div>
+                         
+                          
+            
+                          <div class="row text-center pb-3 ">
+                              <div class="col-md-3 col-sm-2"></div>
+                              <div class="col-md-6 col-sm-8">
+                                <button type="submit" class="btn btn-success" style="background-color: green;">Submit</button>
+                              </div>
+                              <div class="col-md-3 col-sm-2"></div>
+                          </div>
+            
+                          <div class="row text-center">
+            
+                            <div class="col-md-3 col-sm-2"></div>
+                            <div class="col-md-6 col-sm-8">
+                              <a href="/" class="btn btn-secondary w50">Cancel</a>
+                            </div>
+                            <div class="col-md-3 col-sm-2"></div>
+              
+            
+                          </div>
+                         
+                        </div>
+                         
+                          
+                      </form>
+                  </div>
+              </div>
+            </div>
+            
+            
+            
           </form>
           
         </div>
