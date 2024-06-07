@@ -152,7 +152,7 @@ font-size: 5vh;
     font-size:50px !important;
   }
   .custom-form {
-    width:70rem !important;
+    width:50rem !important;
     height:100rem;
     border-radius:30px !important;
     -webkit-border-radius:30px !important;
@@ -164,6 +164,7 @@ font-size: 5vh;
 .form-select {
   line-height:4rem !important;
   font-size:40px !important;
+  width: 500rem;
  
 }
 option {
@@ -217,7 +218,8 @@ font-size:50px !important;
  }
 
  .bg-dark {
-  height: 120rem !important;
+  height: 70rem !important;
+  width: 100%;
  }
  .btn-floating {
   font-size:100px !important;
