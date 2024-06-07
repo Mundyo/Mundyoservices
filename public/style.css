@@ -46,7 +46,6 @@ textarea {
   text-decoration: none;
 } 
 .new h1{
-  background-color: #e60036;
   font-size: 50px;
 }
 
@@ -102,6 +101,15 @@ padding: 0.25rem 1rem;
 margin: 0.1rem 0;
 margin-bottom: 0.5rem;
 }
+.card {
+  width: 35rem;
+  height: 15rem;
+  background:transparent !important;
+}
+.card.review {
+  height: 40rem;
+}
+
 
 
 @media (max-width: 768px) {
@@ -127,4 +135,111 @@ font-size: 5vh;
   }
 
   }
+
+@media (min-width: 2000px){
+ .container {
+  max-width:3860px !important;
+  margin:1rem !important;
+ }
+ 
+  .card {
+    width: 80rem;
+    height: 200rem !important;
+    background:transparent !important;
+   
+  }
+  .card-text:last-child{
+    font-size:50px !important;
+  }
+  .custom-form {
+    width:70rem !important;
+    height:100rem;
+    border-radius:30px !important;
+    -webkit-border-radius:30px !important;
+    -moz-border-radius:30px !important;
+    -ms-border-radius:30px !important;
+    -o-border-radius:30px !important;
+    font-size:50px !important;
+}
+.form-select {
+  line-height:4rem !important;
+  font-size:40px !important;
+ 
+}
+option {
+  width:10px !important;
+ 
+}
+.form-control {
+  line-height:4rem !important;
+}
+input::placeholder{
+  font-size:40px;
+}
+.custom-btn {
+  height:5rem !important;
+  width:8rem;
+  font-size:30px !important;
+}
+.text-below.pb-4.pt-5 {
+  width:50% !important;
+  margin-left:35rem;
+}
+ .carousel-caption h5 {
+  font-size: 100px;
+
+ }
+ .container.fluid h1 {
+  font-size: 100px;
+ }
+ .col-md-6.fluid h2{
+  font-size: 80px;
+ }
+ .col-md-6.fluid p {
+  font-size: 50px !important;
+ }
+ .button.green {
+font-size:50px !important;
+ }
+ 
+ .card-text.customer {
+  font-size: 35px !important;
+ }
+ .card.review {
+  width: 35rem !important;
+ }
+ .card-title.customer {
+  font-size:50px;
+ }
+
+ .row.review {
+  height:150vh !important;
+ }
+
+ .bg-dark {
+  height: 120rem !important;
+ }
+ .btn-floating {
+  font-size:100px !important;
+ }
+ .row.footer {
+  font-size:50px;
+ }
+ .row.footer h5{
+  font-size:50px;
+ }
+ .row.feet {
+  font-size:30px;
+ }
+ .logo-img {
+  width:25vh !important;
+ }
+ .nav-link {
+  font-size:40px !important;
+ }
+ .dropdown-item {
+    font-size:40px !important;
+ }
+}
+
 
