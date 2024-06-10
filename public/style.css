@@ -302,20 +302,20 @@ font-size:50px !important;
   margin-left:8rem !important;
  }
  .form-select {
-  margin-left: 18rem !important;
+  margin-left: 22rem !important;
   width:89.7rem !important;
  }
  input[type="text"], textarea {
   width: calc(100% - 20px);
   padding: 10px;
-  margin-left: 18rem !important;
+  margin-left: 22rem !important;
   border-radius: 1px;
   border: 1px solid #ccc;
   
 }
 .form-control.input-field {
   width: 89.7rem !important;
-  margin-left:18rem;
+  margin-left:22rem;
 }
 input[type="text"]{
   width: 89.7rem !important;
