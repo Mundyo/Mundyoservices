@@ -307,7 +307,7 @@ font-size:50px !important;
   margin-left:8rem !important;
  }
  .form-select.form {
-  margin-left: 25rem !important;
+  margin-left: 23rem !important;
   width:89.7rem !important;
  }
  input[type="text"], textarea {
@@ -323,13 +323,13 @@ font-size:50px !important;
 }
 .form.form-control.form.input-field {
   width: 89.7rem !important;
-  margin-left:25rem;
+  margin-left:23rem;
   font-size: 40px !important;
 }
 
 .form-control.form.input-field {
   line-height: 4rem !important;
-  margin-left: 25rem !important;
+  margin-left: 23rem !important;
   width: 47.5rem !important;
 }
 
