@@ -316,6 +316,7 @@ font-size:50px !important;
 .form-control.input-field {
   width: 89.7rem !important;
   margin-left:24rem;
+  font-size: 40px !important;
 }
 input[type="text"]{
   width: 89.7rem !important;
