@@ -302,7 +302,7 @@ font-size:50px !important;
   margin-left:8rem !important;
  }
  .form-select.form {
-  margin-left: 10rem !important;
+  margin-left: 27rem !important;
   width:89.7rem !important;
  }
  /* .form-control.form.form.input[type="text"], textarea {
@@ -315,7 +315,7 @@ font-size:50px !important;
 } */
 .form.form-control.form.input-field {
   width: 89.7rem !important;
-  margin-left:10rem;
+  margin-left:27rem;
   font-size: 40px !important;
 }
 .formcard.form.input[type="text"]{
@@ -323,7 +323,7 @@ font-size:50px !important;
 }
 .form-control.form.input-field {
   line-height: 4rem !important;
-  margin-left: 10 !important;
+  margin-left: 27rem !important;
   width: 47.5rem !important;
 }
 
