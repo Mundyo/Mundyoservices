@@ -110,6 +110,29 @@ margin-bottom: 0.5rem;
   height: 40rem;
 }
 
+.form-select {
+  margin-left: 8.5rem !important;
+  width: 50rem !important;
+ }
+ input[type="text"], textarea {
+  /* width: calc(100% - 20px); */
+  width: 50rem !important;
+  padding: 10px;
+  margin-left: 8.5rem !important;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  
+}
+.form-control.input-field {
+  width: 50rem !important;
+  margin-left:8.5rem;
+}
+#address.form-control.input-field {
+  width:30rem;
+}
+.formcard {
+  margin-left:1rem !important;
+ }
 
 
 @media (max-width: 768px) {
@@ -275,6 +298,30 @@ font-size:50px !important;
   width: 30rem !important; 
   height: 30rem !important;
  }
+ .formcard {
+  margin-left:8rem !important;
+ }
+ .form-select {
+  margin-left: 8.5rem !important;
+  width:89.7rem !important;
+ }
+ input[type="text"], textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-left: 8.5rem !important;
+  border-radius: 1px;
+  border: 1px solid #ccc;
+  
+}
+.form-control.input-field {
+  width: 89.7rem !important;
+  margin-left:8.5rem;
+}
+input[type="text"]{
+  width: 89.7rem !important;
+}
+
+
 }
 
 
