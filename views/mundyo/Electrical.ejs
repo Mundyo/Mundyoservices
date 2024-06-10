@@ -109,7 +109,7 @@
   </div>
 </div>
 
-            <div class="container  text-left">
+            <div class="container  text-left "id="Air" >
               <div class="row pb-4 pt-5">
                   <div class="intro col-md-6">
                       <div class="card" >
@@ -329,6 +329,19 @@
 
 <%- include('footer')  %>
 
+<script>
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    scrollToAir();
+
+    function scrollToAir() {
+      const AirElement = document.getElementById('Air');
+      if (AirElement) {
+        AirElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+</script>
 <script>
   
   document.addEventListener('DOMContentLoaded', function() {
